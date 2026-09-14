@@ -137,9 +137,15 @@
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     font-family: var(--ff-heading);
     color: var(--color-text-white);
+  }
+
+  h1{
+    font-size: var(--font-size-heading-lg);
+    line-height: 1.1;
   }
 
   a {
@@ -168,6 +174,7 @@
 }
 
 @layer components {
+  
   .primary-header {
     display: flex;
     justify-content: space-between;
@@ -175,12 +182,36 @@
     align-items: center;
 
   } 
-  
+
   .navigation__list {
     display: flex;
     gap: 1rem;
     font-size: var(--font-size-regular);
     font-weight: 500;
+  }
+
+  .hero{
+    padding-block: 4.5rem;
+    text-align: center;
+    color: var(--color-text-white);
+    background: url('./assets/hero.webp');
+  }
+
+  .title{
+    margin-block-end: 2rem;
+  }
+
+  .title__styled-text{
+    font-size: var(--font-size-heading-xl);
+    color: var(--color-text-brand);
+  }
+
+  .hero__text{
+    max-inline-size: 45rem;
+    margin-inline: auto;
+    font-size: var(--font-size-md);
+    display: grid;
+    gap: 1rem;
   }
 }
 
