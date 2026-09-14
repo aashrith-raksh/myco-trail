@@ -152,12 +152,35 @@
     color: var(--color-text-white);
   }
 
-  header {
+  
+}
+
+@layer layout{
+  .wrapper-sm{
+    max-inline-size: 70.625rem;
+    margin-inline: auto;
+  }
+
+  .wrapper-lg{
+    max-inline-size: 84rem;
+    margin-inline: auto;
+  }
+}
+
+@layer components {
+  .primary-header {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0 .75rem 0;
     align-items: center;
 
+  } 
+  
+  .navigation__list {
+    display: flex;
+    gap: 1rem;
+    font-size: var(--font-size-regular);
+    font-weight: 500;
   }
 }
 
