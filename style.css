@@ -157,6 +157,10 @@
   a:focus-visible {
     color: var(--color-text-white);
   }
+  
+  section{
+    padding-block: 8rem;
+  }
 
   
 }
@@ -191,7 +195,6 @@
   }
 
   .hero{
-    padding-block: 4.5rem;
     text-align: center;
     color: var(--color-text-white);
     background: url('./assets/hero.webp');
@@ -212,6 +215,15 @@
     font-size: var(--font-size-md);
     display: grid;
     gap: 1rem;
+  }
+}
+
+@layer utils{
+  .padding-block-sm{
+    padding-block: 4.5rem;
+  }
+  .padding-block-lg{
+    padding-block: 8rem;
   }
 }
 
