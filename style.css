@@ -143,7 +143,7 @@
     color: var(--color-text-white);
   }
 
-  h1{
+  h1 {
     font-size: var(--font-size-heading-lg);
     line-height: 1.1;
   }
@@ -157,35 +157,31 @@
   a:focus-visible {
     color: var(--color-text-white);
   }
-  
-  section{
+
+  section {
     padding-block: 8rem;
   }
-
-  
 }
 
-@layer layout{
-  .wrapper-sm{
+@layer layout {
+  .wrapper-sm {
     max-inline-size: 70.625rem;
     margin-inline: auto;
   }
 
-  .wrapper-lg{
+  .wrapper-lg {
     max-inline-size: 84rem;
     margin-inline: auto;
   }
 }
 
 @layer components {
-  
   .primary-header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0 .75rem 0;
+    padding: 1rem 0 0.75rem 0;
     align-items: center;
-
-  } 
+  }
 
   .navigation__list {
     display: flex;
@@ -194,22 +190,22 @@
     font-weight: 500;
   }
 
-  .hero{
+  .hero {
     text-align: center;
     color: var(--color-text-white);
-    background: url('./assets/hero.webp');
+    background: url("./assets/hero.webp");
   }
 
-  .title{
+  .title {
     margin-block-end: 2rem;
   }
 
-  .title__styled-text{
+  .title__styled-text {
     font-size: var(--font-size-heading-xl);
     color: var(--color-text-brand);
   }
 
-  .hero__text{
+  .hero__text {
     max-inline-size: 45rem;
     margin-inline: auto;
     font-size: var(--font-size-md);
@@ -218,13 +214,21 @@
   }
 }
 
-@layer utils{
-  .padding-block-sm{
+@layer utils {
+  .padding-block-sm {
     padding-block: 4.5rem;
   }
-  .padding-block-lg{
+  .padding-block-lg {
     padding-block: 8rem;
   }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 }
-
-
