@@ -177,6 +177,20 @@
   .wrapper--wide {
     max-width: 83.125rem;
   }
+
+  .section {
+    padding-block: 3.75rem;
+
+    @media (min-width: 760px) {
+      padding-block: 8rem;
+    }
+  }
+
+  .section--compact {
+    @media (min-width: 760px) {
+      padding-block: 4.5rem;
+    }
+  }
 }
 
 @layer components {
