@@ -200,18 +200,16 @@
     background: url("./assets/hero.webp");
   }
 
-  .title {
+  .hero__title {
     margin-block-end: 2rem;
   }
 
-  .title__styled-text {
+  .hero__title span {
     font-size: var(--font-size-heading-xl);
     color: var(--color-text-brand);
   }
 
   .hero__text {
-    max-inline-size: 45rem;
-    margin-inline: auto;
     font-size: var(--font-size-md);
     display: grid;
     gap: 1rem;
