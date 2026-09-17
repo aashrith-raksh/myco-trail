@@ -210,6 +210,10 @@
       grid-auto-columns: 1fr;
     }
   }
+
+  .flow > * + *{
+    margin-block-start: 1em;
+  }
 }
 
 @layer components {
@@ -241,6 +245,12 @@
     font-size: var(--font-size-md);
     display: grid;
     gap: 1rem;
+  }
+
+  .joys-section{
+    ul{
+      margin-block-start: 3rem;
+    }
   }
 }
 
