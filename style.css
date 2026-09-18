@@ -161,6 +161,10 @@
   section {
     padding-block: 8rem;
   }
+
+  img {
+    border-radius: var(--border-radius-3);
+  }
 }
 
 @layer layout {
@@ -194,15 +198,15 @@
 
   .equal-cols {
     display: grid;
-    align-items: var(--vertical-alignment, "stretch");
+    align-items: var(--vertical-alignment, stretch);
     gap: var(--gap, 1.5rem);
 
     &[data-gap="wide"] {
       --gap: 3rem;
     }
 
-    &[data-vertical-alignment="center"]{
-      --vertical-alignment:center
+    &[data-vertical-alignment="center"] {
+      --vertical-alignment: center;
     }
 
     @media (width > 760px) {
@@ -211,7 +215,17 @@
     }
   }
 
-  .flow > * + *{
+  /* ul.equal-cols{
+    article:last-child{
+      height: 100%;
+    }
+  } */
+
+  .full-height {
+    height: 100%;
+  }
+
+  .flow > * + * {
     margin-block-start: 1em;
   }
 }
@@ -247,10 +261,39 @@
     gap: 1rem;
   }
 
-  .joys-section{
-    ul{
+  .joys-section {
+    ul {
       margin-block-start: 3rem;
     }
+  }
+
+  /* Individual Components */
+
+  .card {
+    padding: 1rem;
+    background-color: var(--color-background-light);
+    border-radius: var(--border-radius-3);
+    font-size: var(--font-size-regular);
+    align-content: start;
+    display: grid;
+    gap: var(--gap, 1rem);
+
+    img {
+      border-radius: var(--border-radius-2);
+      object-fit: cover;
+      object-position:center;
+    }
+
+    &[data-card-size="small"] {
+      --card-title-font-size: var(--fs-600);
+      align-content: space-between;
+    }
+  }
+
+  .card__title {
+    font-weight: bold;
+    color: var(--color-text-white);
+    font-size: var(--card-title-font-size, var(--font-size-heading-sm));
   }
 }
 
