@@ -235,7 +235,10 @@
   .primary-header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0 0.75rem 0;
+    flex-wrap: wrap;
+    row-gap: .75rem;
+    padding-block-start: 1rem;
+    padding-block-end: 0.75rem;
     align-items: center;
   }
 
@@ -250,6 +253,8 @@
     text-align: center;
     color: var(--color-text-white);
     background: url("./assets/hero.webp");
+    background-size: cover;
+    background-position: center;
   }
 
   .hero__title {
