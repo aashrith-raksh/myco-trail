@@ -346,6 +346,10 @@
     }
   }
 
+  .button:hover {
+    background-color: var(--color-background-green-light);
+  }
+
   .tag {
     font-weight: 500;
     padding-inline: 6px;
