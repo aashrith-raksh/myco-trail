@@ -156,7 +156,7 @@
 
   a:hover,
   a:focus-visible {
-    color: var(--color-text-white);
+    color: var(--color-text-brand);
   }
 
   section {
@@ -268,16 +268,20 @@
     }
   }
 
-  .primary-footer{
+  .primary-footer {
     padding-block: 2rem;
     background-color: var(--color-background-dark);
     font-size: 1rem;
     display: grid;
     gap: 2rem;
     text-align: center;
+
+    a:hover {
+      color: var(--color-text-white);
+    }
   }
 
-  .primary-footer__title{
+  .primary-footer__title {
     font-family: var(--ff-heading);
     font-weight: bold;
     font-size: 1.25rem;
@@ -336,8 +340,8 @@
       font-size: 1.25rem;
       padding: 10px 20px;
     }
-    
-    &[data-disabled="true"]{
+
+    &[data-disabled="true"] {
       background-color: var(--color-background-green-light);
     }
   }
