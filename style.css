@@ -273,6 +273,18 @@
     }
   }
 
+  .reference-guide-section > :first-child{
+    @media (760px < width < 1250px ){
+      align-items: start;
+    }
+  }
+
+  .nature-section > :first-child{
+    @media (760px < width < 1024px ){
+      align-items: start;
+    }
+  }
+
   .primary-footer {
     padding-block: 2rem;
     background-color: var(--color-background-dark);
