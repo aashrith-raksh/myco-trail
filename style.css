@@ -397,7 +397,7 @@
     .card {
       grid-template-columns: 2fr 3fr;
 
-      img{
+      img {
         align-self: stretch;
         object-fit: cover;
         object-position: center;
@@ -412,7 +412,8 @@
   }
 
   .button,
-  .tag {
+  .tag,
+  .select {
     color: var(--color-text-white);
     background-color: var(--color-background-green-normal);
     border-radius: 4px;
@@ -420,16 +421,23 @@
     font-family: var(--ff-heading);
   }
 
+  .select {
+    padding: 8px 6px 8px 16px;
+    border: 0;
+    font-size: var(--font-size-md);
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  .select:focus-visible{
+    outline: none;
+  }
+
   .button {
     font-size: 1rem;
     padding: 8px 16px;
 
     font-weight: 600;
-
-    &[data-button-type="filter-button"] {
-      font-weight: revert;
-      padding: 8 6 8 16;
-    }
 
     &[data-button-size="large"] {
       font-size: 1.25rem;
@@ -470,7 +478,7 @@
     padding-block: 8rem;
   }
 
-  .grid{
+  .grid {
     display: grid;
   }
 
