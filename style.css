@@ -165,6 +165,8 @@
 
   img {
     border-radius: var(--border-radius-3);
+    object-fit: cover;
+    object-position: center;
   }
 
   button {
@@ -224,9 +226,7 @@
     display: flex;
     flex-wrap: wrap;
     > * {
-      flex: 1 1 var(--min-col-size, 20rem);
-    }
-    @media (width > 760px) {
+      flex: 1 1 var(--min-col-size, 0);
     }
   }
 
@@ -366,7 +366,9 @@
     font-size: 1.25rem;
   }
 
-  /* Individual Components */
+  /* ------- GUIDE PAGE COMPONENTS ---------*/
+
+  /* --------- GENERAL INDIVIDUAL COMPONENTS --------- */
 
   .card {
     --card-gap: 1rem;
@@ -380,8 +382,6 @@
 
     img {
       border-radius: var(--border-radius-2);
-      object-fit: cover;
-      object-position: center;
     }
   }
 
@@ -398,7 +398,7 @@
 
   .card__content {
     display: grid;
-    gap: calc(var(--card-gap) / 2);
+    gap: var(--card-content-gap, var(--card-gap));
     align-content: start;
   }
 
@@ -418,8 +418,10 @@
 
       img {
         align-self: stretch;
-        object-fit: cover;
-        object-position: center;
+      }
+
+      .card__content {
+        --card-content-gap: calc(var(--card-gap) / 2);
       }
     }
   }
@@ -448,7 +450,7 @@
     cursor: pointer;
   }
 
-  .select:focus-visible{
+  .select:focus-visible {
     outline: none;
   }
 
